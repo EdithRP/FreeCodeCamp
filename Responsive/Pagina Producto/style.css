@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   
+}
+
+@media (max-width: 600px) {
+header {
+  flex-wrap: wrap;}
+}
+
+.container{
+height: 75px;
+margin-top:0;
+align-items:center;
+background-image:url('https://static3.depositphotos.com/1000914/204/i/950/depositphotos_2040619-stock-photo-old-vintage-background.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+#header-img{
+border-radius:40%;
+margin: 0 20px;
+width: 250px;
+height: 75px;
+ border-color: black;
+border: 5px black;
+  border-style: solid;  
+}
+#header{
+    text-align: center;  
+ min-height: 75px;
+  position: fixed;
+}
+#titulo{
+    text-align: center;   
+
+}
+#form{   padding: 20px;}
+#form input{ height: 50px;
+width: 200px;
+background-color: rgb(216, 240, 237, 0.5);
+}
+
+.inicial{
+  height: 650px;
+  width: 100% ;
+      text-align: center;
+justify-items:center;
+  padding: 150px;
+color:white;
+  background-image: url("https://fondosmil.com/fondo/32148.jpg");
+ background-repeat: no-repeat;
+  background-size: cover;
+}
+.navegar{
+display: grid;
+  height: 100px;
+  width: 100% ;
+grid-gap: 10px;
+margin-top:20px;
+ grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:
+  "a"
+  "b"
+  "c"; 
+
+}
+
+.grid{
+ font-size: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+align-items:center;
+
+}
+.grid0{
+ font-size: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+align-items:center;
+background-image: url("https://previews.123rf.com/images/oly5/oly51604/oly5160400400/54686844-resumen-fondo-color-azul-claro-del-grunge-dise%C3%B1o-de-textura-vintage-fondo.jpg");
+ background-repeat: no-repeat;
+  background-size: cover;
+}
+li {
+list-style: none;
+}
+
+nav > ul {
+width: 50vw;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+nav {
+  margin-top: 10px;
+  width: 100%;
+  padding: 0 50px;
+}
+.principal{
+ width:100%;
+height: 1000px;
+position:grid;
+}
+.item1 {
+background: PaleGreen;
+grid-area: a;
+width: 10vw;
+height: 15vh;
+border-radius:40%;
+border: 2px black;
+border-style: solid;  
+position: center;
+padding-top: 30px;
+font-size:35px;
+}
+.item2 {
+grid-area: b;
+background: LightSalmon;
+width: 10vw;
+ height: 15vh;
+border-radius:40%;
+border: 2px black;
+  border-style: solid;
+  padding-top: 30px;
+  font-size:35px;
+}
+ 
+.item3{
+grid-area: c;
+background: PaleTurquoise;
+width: 10vw;
+height: 15vh;
+border-radius:40%;
+border: 2px black;
+border-style: solid;
+padding-top: 30px;
+font-size:35px;
+}
+
+a{
+ text-decoration:none;
+color:Black;
+}
+
+.img{
+border-radius:30%;
+margin: 10px auto;
+width:400px;
+height: 350px;
+ border-color: black;
+border:1px black;
+  border-style: solid;
+
+}
+.grid2{
+ font-size: 1.5em;
+  display: grid;
+  grid-gap: 20px;
+margin: 10px auto;
+ grid-template-rows: 300px 200px;
+ grid-template-areas:
+  "d"
+  "e";
+}
+
+.item4 {
+grid-area: d;
+
+margin: 10px auto;
+width:300px;
+ height: 360px;
+ align-items:center;
+
+}
+.item5 {
+grid-area: e;
+width: 400px;
+  margin: 20px auto; 
+}
+h2, p{
+ font-size: 32px;
+}
+
+#arte{
+ height: 1000px;
+}
