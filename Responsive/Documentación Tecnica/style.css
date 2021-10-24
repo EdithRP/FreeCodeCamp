@@ -1,0 +1,134 @@
+
+body{  
+
+  font-family: 'Open Sans', Arial, sans-serif;}
+img{
+  margin-left:30%;
+  width:500px;
+  border: 2px solid orange;
+  border-radius:50px;
+}
+.unstyled{ 
+  list-style: none; 
+  padding: 0; 
+  margin: 0;
+}
+ a{ 
+  text-decoration: none; }
+.headerp {
+ 
+  left: 0; top: 0; bottom: 0;
+  background: #35302D;
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+.logo{
+
+  font: 300 2em   font-family: 'Open Sans', Arial, sans-serif;
+  text-align: center;
+  padding: 0; margin: 0;}
+
+a{
+    display: block;
+    padding: 1em 0;
+    color: #DFDBD9;
+    text-decoration: none;
+  transition: .15s linear color;}
+
+ a:hover{
+  color: orange;}
+
+span{ color: orange; }
+
+.main-nav span{
+    font-weight: 700;
+    transition: .15s linear color;
+  }
+
+#navbar li {
+    position: relative;
+    border-bottom: solid 2px grey;
+  }
+
+#navbar ul{
+    height: 70%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+    border-top: solid 4px gray;
+  }
+
+h2{
+    text-transform: uppercase;
+}
+  
+  .main-nav a{
+      text-align: center;
+    }
+
+.list-hover-slide li{
+    position: relative;
+    overflow: hidden;
+  }
+.list-hover-slide a{
+    display: block;
+    position: relative;
+    z-index: 1;
+  transition: .35s ease color;}
+
+ a:before{
+      content: '';
+      display: block;
+      z-index: -1;
+      position: absolute;
+      left: -100%; 
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      border-right: solid 5px orange;
+      transition: .35s ease left;
+    }
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+#main-doc header {
+  margin: 0px;
+  color: black;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: thin;
+}
+
+#navbar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  font-size: 1.4em;
+  background:orange;
+
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+ }
+
+
+
