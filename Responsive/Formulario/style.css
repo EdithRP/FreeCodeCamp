@@ -1,0 +1,64 @@
+
+body{
+  background-image: url('https://ruizhealytimes.com/wp-content/uploads/2016/01/color-cafe.jpg');
+   background-size: cover;
+
+}
+header
+{
+      background-position: center;
+      font-size: 20px;
+  }
+
+input[type=text], input[type=password], input[type=number], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.content{
+
+width:600px;
+ margin: 0 auto;
+ background:rgb(216, 240, 237, 0.7);
+padding:5%;
+}
+
+@media screen and (min-width: 600px) {
+.my-form .grid {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+ 
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 15px;
+   grid-column-gap: 20px;
+}
+
+.my-form .grid-3 {
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+#comentario{
+  
+  width: 100%;
+  height:40vh;
+}
+
+button{
+  margin: 0 auto;
+  box-shadow: 2px 4px 8px lightseagreen;
+  width: 100%;
+  height:20vh;
+  margin: 10px auto;
+   border: 2px lineal black;
+  background:rgb(194, 165, 165);
+  cursor:pointer;
+  
+}

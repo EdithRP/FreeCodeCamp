@@ -1,0 +1,204 @@
+
+<head>
+  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <script type="text/javascript" src="common.js" ></script>
+</head>
+<body>
+  
+  <div class="content">
+  <header class="header">
+    <h1 id="title">Formulario Financiero</h1>
+    <p id="description" >
+      Agradecemos su respuesta de las siguientes preguntas, con el fin de iniciar su analisis de situación Financiera
+    </p>
+  </header>
+  <form id="survey-form" class="my-form" name="registro">
+    <div class="container">
+      <label id="name-label" for="name"><b> Nombre</b></label>
+      <input type="text" id="name" placeholder="Ingrese su nombre" name="name" size="12"  class="control" required/>
+      <label id="email-label" for="email"><b>Email</b></label>
+      <input type="email" id="email" class="control" placeholder="Ingrese su Email" name="email" required autofocus/>
+      <div class="help-block with-errors"></div>
+      <label id="Contraseña" for="password"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingrese su Contraseña" name="password" size="12" type="text" tabindex="1" required autofocus/>
+      <label id="number-label" for="phone"><b>Numero de Telefono</b></label>
+      <input type="number" id="number" placeholder="Ingrese su telefono" name="phone"  size="12"   min="1000000"
+        max="9999999999" required>
+      
+ <div>
+   <p><strong>Información Financiera</strong></p>
+      <select id="dropdown" name="role" required>
+        <option disabled selected value>Indique su nivel Ingresos</option>
+        <option value="Menos de 1 SMLV">Menos de 1 SMLV</option>
+        <option value="1SMLV"> 1 SMLV</option>
+        <option value="1y2">Entre 1 y 2 Millones</option>
+        <option value="1y3">Entre 2 y 3 Millones</option>
+        <option value="Mas de 3">Más de 3 Millones</option>
+      </select>
+    </div>     
+      
+      
+<p><strong>De donde proviene su mayor fuente de Ingresos</strong></p>
+      
+        <input
+          name="ingresos"
+          value="independiente"
+          type="radio"
+          class="input-radio"
+          checked
+        />Independiente</label
+      >
+    <label>
+       <input
+          name="ingresos"
+          value="asalariado"
+          type="radio"
+          class="input-radio"
+          checked
+        />Asalariado</label
+      >
+      <label>
+       <input
+          name="ingresos"
+          value="inversiones"
+          type="radio"
+          class="input-radio"
+          checked
+        />Inversiones Financieras</label
+      >
+    <label>
+       <input
+          name="ingresos"
+          value="renta"
+          type="radio"
+          class="input-radio"
+          checked
+        />Renta</label
+      >
+    <label>
+       <input
+          name="ingresos"
+          value="otras"
+          type="radio"
+          class="input-radio"
+          checked
+        />Otras Fuentes</label
+      >
+    </div>
+    
+     <p><strong>
+        ¿Como manejo mi dinero?</strong>
+        <span class="clue">Elige con cuales opciones se identifica</span>
+      </p>
+     <div  class= "grid-2">
+      
+
+      <label
+        ><input
+          name="deconomia-personal"
+          value="ahorro"
+          type="checkbox"
+          class="input-checkbox"
+        />Todos los meses destino cierto monto para el ahorro</label
+      >
+      <label>
+        <input
+          name="economia-personal"
+          value="compras"
+          type="checkbox"
+          class="input-checkbox"
+        />Si veo un descuento usualmente lo aprovecho asi no tenga planeado comprarlo.</label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="costos"
+          type="checkbox"
+          class="input-checkbox"
+        />Soy una persona que verifica en donde sea más economico antes de comprar</label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="targeta"
+          type="checkbox"
+          class="input-checkbox"
+        />Manejo al menos una targeta de credito</label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="presupuesto"
+          type="checkbox"
+          class="input-checkbox"
+        />Hago un presupuesto mensual </label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="presto"
+          type="checkbox"
+          class="input-checkbox"
+        />A veces presto dinero y olvido hacer seguimiento</label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="deudas"
+          type="checkbox"
+          class="input-checkbox"
+        />Tengo deudas financieras</label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="gastos"
+          type="checkbox"
+          class="input-checkbox"
+        />En mi grupo me identifico como el que siempre gasta</label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="modas"
+          type="checkbox"
+          class="input-checkbox"
+        />A la hora de comprar prefiero lo de marca </label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="tecnologia"
+          type="checkbox"
+          class="input-checkbox"
+        />Me gusta cambiar de tecnologia, no importa si aún funciona los dispositivos</label
+      >
+      <label
+        ><input
+          name="economia-personal"
+          value="domicilios"
+          type="checkbox"
+          class="input-checkbox"
+        />Compro comida preparada, no cocino</label
+      >
+    </div>
+    
+     <div >
+      <p>Mencione sus gastos, e indique un monto de cada uno </p>
+      <textarea
+        id="comentario"
+        name="comentario"
+        placeholder="Ingrese por favor su respuesta"
+      ></textarea>
+    </div>
+ 
+      <div class="guardar">
+        <button type="submit"  id= "submit" class="signupbtn" onSubmit= "return validateForm()" onclick="submitForm()"> <strong>Enviar</strong> </button>
+      </div>  
+    </div>
+  </form>
+</body>
+</html>
+      
+                    
